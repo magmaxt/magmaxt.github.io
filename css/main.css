@@ -1,12 +1,28 @@
 body {
     margin: 60px auto;
     width: 70%;
+    font-family: 'Fahkwang', 'Tangerine', serif;
+    font-size: 18px;
+    text-shadow: 4px 4px 4px #aaa;
+    /*     color: blue;		 */
+    //background-color: #00afd7;
 //    background-image: url(../images/sunset1.JPG);
     background-size: 1000px 900px;
     background-repeat: no-repeat;
     background-position: center center;
-//    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 20%,rgba(0,0,0,0.6) 20%), url(../images/sunset1.JPG);
+    //    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 20%,rgba(0,0,0,0.6) 20%), url(../images/sunset1.JPG);
 }
+.button {
+    position: fixed;
+    /* the bottom of the button will always be
+        20px from the bottom of the window */
+    bottom: 20px;
+    /* the right edge of the button will always be
+        20px from the right side of the window */
+    right: 20px;
+    color: red;
+    }
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
@@ -45,4 +61,20 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+}
+/* headers and top links*/
+
+#top {
+  position: absolute;
+  top:0;
+}
+
+.top {
+  float:right;
+  padding-top: 20px;
+}
+code {
+    display:block;padding:0.5em;
+    color:#333;
+    background:#f8f8ff
 }
