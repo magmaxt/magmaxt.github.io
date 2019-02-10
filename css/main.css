@@ -78,3 +78,10 @@ code {
     color:#333;
     background:#f8f8ff
 }
+/* I included this in my CSS so that you could run the snippet below! */
+.extra-cool-text {
+  color: #42cbad;
+  font-weight: 700;
+  line-height: 80px;
+}
+
