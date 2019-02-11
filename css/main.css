@@ -1,33 +1,27 @@
 body {
-    margin: 60px auto;
-    width: 70%;
+    margin: 10% auto;
+    width: 100%;
     font-family: 'Fahkwang', 'Tangerine', serif;
     font-size: 18px;
-    text-shadow: 4px 4px 4px #aaa;
     /*     color: blue;		 */
-    background-color: #00afd7;
+//    background-color: #00afd7;
 //    background-image: url(../images/sunset1.JPG);
-    background-size: 1000px 900px;
-    background-repeat: no-repeat;
+//    background-size: 1000px 900px;
+//    background-repeat: no-repeat;
     background-position: center center;
     //    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 20%,rgba(0,0,0,0.6) 20%), url(../images/sunset1.JPG);
 }
-.button {
-    position: fixed;
-    /* the bottom of the button will always be
-        20px from the bottom of the window */
-    bottom: 20px;
-    /* the right edge of the button will always be
-        20px from the right side of the window */
-    right: 20px;
-    color: red;
-    }
 
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+//    padding-left: 100px;
+    margin-left: 20%;
+    margin-right: 20%;
     list-style: none;
     font-weight: bold;
+    text-shadow: 2px 2px 2px #aaa;
+    position: relative;
+    text-align: center;
 }
 nav ul li, footer ul li {
     display: inline;
@@ -41,11 +35,13 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
+    font-size: 30px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    text-align:center;
 }
 p {
-    font-size: 1.5em;
+    font-size: 18px;
     line-height: 1.4em;
     color: #333;
 }
@@ -53,22 +49,12 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
-
-ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
-}
-
-ul.posts li {
-    list-style: none;
-}
 /* headers and top links*/
 
 #top {
   position: absolute;
   top:0;
 }
-
 .top {
   float:right;
   padding-top: 20px;
@@ -84,4 +70,102 @@ code {
   font-weight: 700;
   line-height: 80px;
 }
+.sidebar, .toc-container with-left-border{
+    padding-top:0px;
+    padding-right:5px;
+    padding-bottom:0px;
+    padding-left:20px;
+    border-left-width :1px;
+    border-left-style: dashed;
+    border-left-color: rgba(166,123,214,0.8);
+    margin-left:2px;
+}
+.button {
+    position: fixed;
+    /* the bottom of the button will always be
+        20px from the bottom of the window */
+    bottom: 20px;
+    /* the right edge of the button will always be
+        20px from the right side of the window */
+    right: 20px;
+    color: red;
+    }
 
+/* for side bar begins: from https://codepen.io/xblack/pen/JGtfd */
+/* *{ */
+/*   -webkit-box-sizing: border-box; */
+/*   -moz-box-sizing: border-box; */
+/*   box-sizing: border-box; */
+/* } */
+/* body{ */
+/* 	font-family: Geneva, Tahoma, Verdana, sans-serif; */
+/* 	margin: 0px; */
+/* } */
+.nav{
+    width: 12%;
+    //height: 50px;
+    margin:0%;
+    padding-top: 2%;
+    //    background: rgba(200,200,200,0.2);
+    position: fixed;
+    right: 1%;
+    //    text-align: center;
+    display: inline;
+}
+/* #menu{ */
+/*     float: left; */
+/*     font-size: 22px; */
+/*     font-weight: normal; */
+/*     padding-right: 20px; */
+/* //    color: rgba(100,100,100,0.5);; */
+/* } */
+.nav ul{
+//    width: 20%;
+    list-style-type: none;
+    background: rgba(200,200,200,0.2);
+    border-right-style: dashed;
+    border-right-color: rgba(166,123,214,0.5);
+    margin-right:2%;
+}
+#top-menu{
+   width: 100%;
+   clear: both;
+   display: block;
+   float: right;
+   padding-left: 1px;
+   margin-top: 10px;
+   margin-right: 10px;
+}
+.links{
+	color: black;
+	font-size: 18px;
+	font-weight: normal;
+}
+.nav ul li a{
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 18px 10px 0px 8px;
+}
+.nav ul li a:hover{
+	color: #fff;
+	background-color: black;
+	border-left: thick solid red;
+}
+#wrapper{
+	margin-top: 5px;
+}
+.container{
+    width: 60%;
+//    height: 600px;
+    margin: 2% auto;
+    background: rgba(200,200,200,0.1);
+    border-bottom: 1px solid rgba(200,200,200,1);
+    padding: 20px;
+}
+.active{
+    color: white;
+    background-color: rgba(100,100,100,1);
+    border-left: thick solid rgba(0,255,0,0.5);
+}
+/* for side bar ends: from https://codepen.io/xblack/pen/JGtfd */
