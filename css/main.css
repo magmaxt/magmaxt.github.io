@@ -59,8 +59,10 @@ footer {
   top:0;
 }
 .top {
-  float:right;
-  padding-top: 20px;
+    position:fixed;
+    right: 6%;
+    bottom:2%;
+    color: gray;
 }
 code {
     display:block;padding:0.5em;
