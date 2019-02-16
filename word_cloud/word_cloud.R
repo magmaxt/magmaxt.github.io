@@ -1,17 +1,18 @@
 #from 
 #http://www.sthda.com/english/wiki/text-mining-and-word-cloud-fundamentals-in-r-5-simple-steps-you-should-know
 # Install
-install.packages("tm")  # for text mining
-install.packages("SnowballC") # for text stemming
-install.packages("wordcloud") # word-cloud generator 
-install.packages("RColorBrewer") # color palettes
+#install.packages("tm")  # for text mining
+#install.packages("SnowballC") # for text stemming
+#install.packages("wordcloud") # word-cloud generator 
+#install.packages("RColorBrewer") # color palettes
 # Load
 library("tm")
 library("SnowballC")
 library("wordcloud")
 library("RColorBrewer")
 
-text <- readLines(file.choose())
+#text <- readLines(file.choose("/Users/Tian/repos/Bitbucket/CemYolo/App/Value_sort/Yenjoe_value_results.txt"))
+text <- readLines("/Users/Tian/repos/Bitbucket/CemYolo/App/Value_sort/word_cloud_test.txt")
 # Read the text file from internet
 #filePath <- "http://www.sthda.com/sthda/RDoc/example-files/martin-luther-king-i-have-a-dream-speech.txt"
 text <- readLines(filePath)
