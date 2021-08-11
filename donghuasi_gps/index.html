@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <!--忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>东华禅寺地图导览</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="trans">
+    <div class="auto_box">
+        <div class="auto_bar active">
+            <span></span>
+        </div>
+        <div class="auto_text clearfix">自动</div>
+    </div>
+    <div class="auto_tip">
+        <p>到达景点后，将自动播放语音介绍。</p>
+    </div>
+    <div id="map" class="map_con">
+        <div class="mapcon_pane">
+            <div class="mapcon_pane mapcon_pane_inner">
+                <img class="bg" src="images/bg.jpeg" alt="" id="bg_img" onClick="hideList()">
+                <div class="blank"></div>
+            </div>
+            <div class="mapcon_pane mapcon_marker_pane" id="mapcon">
+                <!-- 此处动态填充景点名称及标记 -->
+            </div>
+            <!-- 弹窗内容 -->
+            <div class="mapcon_popup" id="mapcon_modal">
+                <!-- 弹窗内容动态填充 -->
+            </div>
+        </div>
+        <div class="ft" id="ft_tit">
+            <h3 class="title">景点列表</h3>
+        </div>
+        <div class="jd_lists">
+            <div class="lists navs modal">
+                <div class="hd">
+                    <span>东华禅寺</span>
+                    <em>(20个主要景点)</em>
+                </div>
+                <div class="bd">
+                    <ul id="ul_lists" class="ul_con ul_navs">
+                        <!-- 景点列表填充处 -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type='text/javascript' src='js/fastclick.js'></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js?v=298076543"></script>
+    <script>
+    $(function() {
+        FastClick.attach(document.body);
+    });
+    var initMarkerId = 'd39'; //大雄宝殿
+    window.onload = function() {
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        };
+        //从扫描二维码进来
+        var source = getQueryString('source');
+        var id = getQueryString('markId');
+        if (source == 'code') initMarkerId ? initMarkerId = id : initMarkerId = initMarkerId;
+
+        $("html,body").animate({
+            scrollTop: $("#" + initMarkerId).offset().top - $(window).height() / 2 + 100,
+            scrollLeft: $("#" + initMarkerId).offset().left - $(window).width() / 2
+        });
+        if (source == 'code'){
+            //扫码进来自动打开弹窗
+            showInfo(initMarkerId);
+        }
+    }
+    </script>
+</body>
+
+</html>
