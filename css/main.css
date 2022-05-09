@@ -1,7 +1,7 @@
 body {
     margin: 10% auto;
     width: 100%;
-    font-family: 'Fahkwang', 'Tangerine', serif;
+    font-family: 'Fahkwang', 'Tangerine', 'serif';
     font-size: 18px;
     /*     color: blue;		 */
 //    background-color: #00afd7;
@@ -24,6 +24,7 @@ nav ul, footer ul {
     text-align: center;
 }
 nav ul li, footer ul li {
+    font-family:'Calibri';
     display: inline;
     margin-right: 20px;
 }
@@ -35,14 +36,20 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 30px;
+    font-size: 26px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     text-align:center;
 }
+h3 {
+    font-size: 18px;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    text-align:left;
+}
 p {
-    font-family:'Times';
-    font-size: 20px;
+    font-family:'Calibri';
+    font-size: 15px;
     line-height: 1.6em;
     margin-bottom:0.6em;
     margin-top:0.1em;
@@ -161,6 +168,7 @@ code {
 	margin-top: 5px;
 }
 .container{
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     width: 60%;
 //    height: 600px;
     margin: 2% auto;
