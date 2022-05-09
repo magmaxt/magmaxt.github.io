@@ -52,6 +52,7 @@ h3 {
     font-size: 18px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
+    font-weight: normal;
     text-align:left;
 }
 h4 {
@@ -196,3 +197,8 @@ code {
     border-left: thick solid rgba(0,255,0,0.5);
 }
 /* for side bar ends: from https://codepen.io/xblack/pen/JGtfd */
+
+/* for the head img */
+img.rounded-corners {
+  border-radius: 66%;
+}
