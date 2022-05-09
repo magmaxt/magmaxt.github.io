@@ -32,10 +32,14 @@ a {
     text-decoration: none;
     color: grey;
 }
+/* a:visited{color:grey;} */
+/* a:focus{color:darkblue;} */
 a:hover {
     text-decoration: underline;
-    color:lightblue
+    color:black;
 }
+/* a:active{color:grey;} */
+
 h1 {
     font-size: 26px;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
