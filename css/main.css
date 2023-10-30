@@ -168,14 +168,14 @@ code {
    width: 80%;
    clear: both;
    display: block;
-   float: right;
-   padding-left: 1px;
-   margin-top: 16px;
+   float: right; 
+   padding-left: 0px;
+   margin-top: 12px;
    margin-right: 2px;
 }
 .links{
 	color: grey;
-	font-size: 18px;
+	font-size: 12px;
 	font-weight: normal;
 }
 .nav ul li a{
@@ -194,7 +194,7 @@ code {
 }
 .container{
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    width: 55%;
+    width: 66%;
 //    height: 600px;
     margin: 2% auto;
     background: rgba(200,200,200,0.1);
@@ -210,5 +210,5 @@ code {
 
 /* for the head img */
 img.rounded-corners {
-  border-radius: 66%;
+    border-radius: 66%;
 }
