@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Tian, Xiaochuan (田小川) | Geodynamics & Tectonics</title>
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4LDG2YBXZH"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -9,151 +13,550 @@
       gtag('js', new Date());
       gtag('config', 'G-4LDG2YBXZH');
     </script>
-    <!--Centered Image Start-->
-    <div style="text-align: center;">
-      <img src="images/photos_people/Tian-2023-BC-photo.jpg" class="rounded-corners" style="width:16%; "/>
-	  
-    </div>
-    <!--Centered Image End-->
 
-    <meta charset="utf-8"> <!-- for chinese character -->
-    <title>Magma X. Tian: About</title>
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-  </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <body>
-    <!-- <p><SPAN STYLE="position: relative; left: 20%; color: blue;">(This website is under development)</SPAN></p> -->
-    <!-- <h1><SPAN STYLE="position: absolute; center; color: black;">田小川 </SPAN></h1> -->
-	<!-- <h1> Tian, Xiaochuan  </h1> -->
-    <!-- <p><SPAN STYLE="position: relative; left: 45%; color: black;">Tian, Xiaochuan</SPAN></p> -->
-    <p><p align="center" style="font-size:120%">Tian, Xiaochuan </p>
-    <p><p align="center" style="font-size:100%">Summa and Awwiller Postdoctoral Fellow </p>
-    <p><p align="center" style="font-size:100%">Department of Earth and Planetary Sciences, UC Davis</p>
-    <p><p align="center" style="font-size:100%">equtian@ucdavis.edu </p>
-    <!-- <p><p align="center" style="font-size:100%">Tian, Xiaochuan </p>
-	 <p><p align="center" style="font-size:95%">(A 'little river' that flows from the mountain peaks to the ocean deeps)</p>
-    <p><p align="center" style="font-size:88%">x.tian@bc.edu </p> -->
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 2.5rem 2rem 2rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            display: block;
+            border: 5px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #e3e8f0;
+            margin-bottom: 0.3rem;
+        }
+
+        .position {
+            font-size: 1rem;
+            color: #c5d0e3;
+            font-weight: 300;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 2rem;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #1e3c72;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #2a5298;
+        }
+
+        h3 {
+            color: #2c3e50;
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .research-interests {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .research-item {
+            background: #f8f9fa;
+            padding: 1.2rem;
+            border-left: 4px solid #2a5298;
+            border-radius: 4px;
+        }
+
+        .publication {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .publication:last-child {
+            border-bottom: none;
+        }
+
+        .pub-authors {
+            color: #555;
+            margin-bottom: 0.3rem;
+            line-height: 1.5;
+        }
+
+        .pub-journal {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .pub-highlight {
+            background: linear-gradient(to right, #fff9e6, transparent);
+            padding: 0.3rem 0.6rem;
+            border-radius: 3px;
+            display: inline-block;
+            font-weight: 600;
+            color: #d97706;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+        }
+
+        .pub-links a {
+            display: inline-block;
+            margin-right: 1rem;
+            color: #2a5298;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .pub-links a:hover {
+            text-decoration: underline;
+        }
+
+        .award {
+            margin-bottom: 1.5rem;
+            padding: 1.2rem;
+            background: #f8fdf9;
+            border-radius: 4px;
+            border-left: 4px solid #27ae60;
+        }
+
+        .award-title {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.3rem;
+            font-size: 1.05rem;
+        }
+
+        .award-amount {
+            color: #27ae60;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .award-desc {
+            color: #666;
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            font-size: 1.05rem;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            margin-right: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .contact-item a {
+            color: #2a5298;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .highlight-box {
+            background: #e8f4f8;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+
+        .vision-box {
+            background: #f0f4f8;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid #5a67d8;
+            border-radius: 4px;
+        }
+
+        .vision-box h3 {
+            margin-top: 0;
+            color: #5a67d8;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav a {
+                text-align: center;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+
+            main {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/photos_people/Tian-2023-BC-photo.jpg" alt="Dr. Tian Xiaochuan" class="profile-img">
+        <h1>Tian, Xiaochuan (田小川)</h1>
+        <p class="subtitle">Geodynamics | Lithospheric Deformation | Magma-Tectonic</p>
+        <p class="position">Summa and Awwiller Postdoctoral Fellow | UC Davis</p>
+    </header>
+
     <nav>
-      <ul>
-    	<hr>
-    	<li><a href="./index.html">About</a></li>
- 	<li><a href="./research/index.html">Research</a></li>
-	<li><a href="./CV_Tian.pdf">CV</a></li>
-	<li><a href="./personal/index.html">Personal</a></li>
-	<!-- 	<li><a href="./notes/index.html">Notes</a></li> -->
-	<!-- 	<li><a href="./presentations/index.html">Presentations</a></li>  -->
-	<!-- 	<li><a href="./about/index.html">About</a></li> -->
- 	<hr>
-      </ul>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#awards">Awards & Funding</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
-    <!-- for side bar begins: from https://codepen.io/xblack/pen/JGtfd -->
-    <div class="nav">
-      <!-- <span id ="menu">&#9776;</span>  -->
-      <ul id="top-menu">
-	<li><a href="#one" class="links">Xiaochuan</a></li>
-	<li><a href="#one-1" class="links">Education</a></li>
-	<li><a href="#two" class="links">Values</a></li>
-	<li><a href="#three" class="links">Principles</a></li>
-	<li><a href="#five" class="links">Quotes</a></li>
-	<!-- <li><a href="#five" class="links">"epitaph"</a></li> -->
-      </ul>
-    </div>
-    <!--  <p><img src="images/photos_people/Tian-2023-BC-photo.jpg" class="rounded-corners" style="width:16%;float:left;margin-left: 2%; "/></p> -->
-    <div id="wrapper">
-      <div id="one" class="container">
-	<h3>Xiaochuan (小川), means little river:</h3>
-	<p style="text-indent: 39px;" >
-			A geodynamic modeler that loves climbing to the mountain peaks and sailing in the vast oceans.</p>
-	<p style="text-indent: 39px;" >
-			I spend my seconds with <a href="./personal/index.html#Ethan-Walden-240916">贝果</a>/一凡 (Ethan, born in 2022), 
-			playing racket sports (tennis, badminton & ping pong), swimming, reading and exploring how the world works.</p>
-	<p style="text-indent: 39px;" >
-			To realize the universal truth of the mind and matter, 
-		I <a href="https://www.dhamma.org/en/index">meditate</a> 2 hours a day since 20240828 after 
-			my first 10-day meditation retreat at<a href="https://dhara.dhamma.org/"> Dhamma Dhara</a>, 
-			which has profundly transformed my life positively. </p>	
-	<p style="text-indent: 39px;" >
-		 I try my best to contribute to a <b>better</b> world with a brighter future. </p>
-      </div>
-      <div id="one-1" class="container">
-	<h3>Education:</h3>
-	<p> Ph.D. in Geophysics from LDEO, Columbia University (2021) </p>
-	<p> M.Sc. in Geophysics from CERI, Univeristy of Memphis (2015)</p>
-	<p> B.Sc. in Geology from Sun Yat-sen University (2013)</p>
-      </div>
-      <div id="two" class="container">
-	<h3>Values that I cherished:</h3>
-	<p> Help society and help others 
-	<p> Sprirituality 
-	<p>  Family
-	<p> Work on the Frontiers of Knowledge
-	<p>Work on challenging problems
-	<p>Creativity
-	<p>Honesty and integrity
-	<p>Friendship </p>
-	<!-- <p>Values that I don't like much are:</p> -->
-	<!-- <p>Power and Authority; Tradition; Affiliation; Supervision; Public contact; -->
-	  <!--   Structure and Predicability; </p> -->
-      </div>
-      <div id="three" class="container">
-	<h3>Principles:</h3>
-	<p>Be Proactive.  --Stephen Covey</p>
-	<p>Think win-win.</p>
-	<p>向死而生</p>
-	<p>无信不立;轻诺必寡信 《论语：颜渊；道德经：六十三章》</p>
-      </div>
-      <div id="five" class="container">
-	<h3>Quotes that inspire me:</h3>
-	<p>If you want to build a ship, don't drum up the men to gather wood, divide the work and give orders.
-	  Instead, teach them to yearn for the vast and endless sea. </p>
-	<p align="right">---Antoine de St. Exupery</p>
-	<p>Civilization exists by geological consent, subject to change without notice.</p>
-	<p align="right">---Will Durant</p>
-	<p>Have you seen Los Angeles at 4am? I see it often because that's when I start training.</p>
-	<p align="right">---Kobe Bryant</p>
-      	<p>不失其所者久，死而不亡者寿。</p>
-	<p align="right">	  ---《道德经》</p>
-	<p>授人以鱼，不如授人以渔</p>
-	<p align="right">	  ---《淮南子·说林训》</p>
-	<p>In the midst of winter, I found there was, within me, an invincible summer.</p>
-	<p align="right">	  ---Albert Camus</p>
-	<p>People have no higher calling than to strive for the greater good of humankind and society and that the future of humanity can be assured only when there is a balance between scientific development and the enrichment of the human spirit.</p>
-	<p align="right">	  ---Kazuo Inamori</p>
-	<p>Where do we go when we die?</p>
-	<p align="right"> --- inspiring teaching by Thich Nhat Hanh <a href="https://youtu.be/SvcTgmF4Xug">-->link</a></p>
-	<p>无我-->宇宙与我合一</p>
-	<p align="right"> --- 南山寺悲禹师父</p>
-	<p>It is just the boundaries of sensation which determine what is me and what is not me. These boundaries can either be expanded or made smaller. ---> Compasion </p>
-	<p align="right"> --- inspiring teaching by Isha Sadhguru <a href="https://youtu.be/Mn4SRwwh5L0?t=677">-->link</a></p>
-	<p>In mathematics you don't understand things. You just get used to them.</p>
-	<p>If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is.</p>
-	<p align="right">	  ---John von Neumann</p>
-	<p>I have a definition of success. For me it's very simple. It's not about wealth and fame and power. It is about how many shining eyes I have around me. 
-		 <a href="https://www.benjaminzander.org/library/ted-the-transformative-power-of-classical-music/">-->TED: The transformative power of classical music</a> </p>
-	<p align="right">	  --- Benjamin Zander</p>
-	
-   	<p>	<a href="https://www.dhamma.org/en/about/art"><em>Art of Living</em> </a> </p>
-	<p>     "Bhavatu Sabba Mangalam"
-		<a href="https://www.dhamma.org/en/index">-->Vipassana Meditation</a> </p>
-	<p align="right">	  --- S.N. Goenka</p>
-      </div>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>
+                Ignorance of reality causes suffering; to be free from suffering, we seek truths. One fundamental truth of the Earth is that things move and deform, governed by the equations of conservation of mass, momentum and energy, which constitute the core of a geodynamic model. Meanwhile, progress in Earth science increasingly depends on bridging processes once studied in isolation. By leveraging advances in geodynamic modeling, global and refined datasets, as well as interdisciplinary constraints, my research seeks to reveal principal mechanisms and quantify key parameters that control the phenomena vital to civilizations — e.g. earthquakes, volcanism, topography, and climate.
+            </p>
 
-    </div>
-    <!-- for side bar ends: from https://codepen.io/xblack/pen/JGtfd -->
-    <a href="#top" class="top">Top</a>
-    
-    <!-- <footer>
-      <ul>
-	<hr style="width:100%;text-align:center;margin-left:0">
-	<li><a href="mailto:x.tian@columbia.com">Email me!</a></li>
-	<hr>      
-      </ul>
-    </footer> -->
-    <!-- Javascript Content goes here bottom before body -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="./js/index.js"></script>
-    <!-- for side bar : from https://codepen.io/xblack/pen/JGtfd -->
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  </body>
+            <div class="highlight-box">
+                <p><strong>Research Philosophy:</strong> In pursuit of <em>simplicity</em> amid nature's inherent complexity, I emphasize uncovering the <em>general first-order</em> controls underlying intricate phenomena through a combination of analytical and numerical models validated against multidisciplinary observational constraints.</p>
+            </div>
+
+            <h3>Education</h3>
+            <ul style="list-style-position: inside; margin-left: 1rem;">
+                <li><strong>Ph.D. in Geophysics</strong>, Columbia University (2021) | Advisor: W. Roger Buck</li>
+                <li><strong>M.Sc. in Geophysics</strong>, University of Memphis (2015) | Advisor: Eunseo Choi</li>
+                <li><strong>B.S. in Geology</strong>, Sun Yat-sen University (2013)</li>
+            </ul>
+        </section>
+
+        <section id="research">
+            <h2>Research Interests</h2>
+            <div class="research-interests">
+                <div class="research-item">
+                    <strong>Oceanic Transform Faults</strong>
+                    <p>How magmatism controls global variations in transform fault topography; what about global fracture zones?</p>
+                </div>
+                <div class="research-item">
+                    <strong>Large Igneous Provinces</strong>
+                    <p>Magmatic intrusions, crustal rheology, topography, climate impacts, global warming before volcanism?</p>
+                </div>
+                <div class="research-item">
+                    <strong>Subduction Zone Dynamics</strong>
+                    <p>Strain partitioning at global subduction zones and forearc deformation in Northern California</p>
+                </div>
+                <div class="research-item">
+                    <strong>Continental Rifting</strong>
+                    <p>Lithospheric strength at volcanic <b>rifting</b> margins and the formation of seaward dipping reflectors</p>
+                </div>
+                <div class="research-item">
+                    <strong>Rock Fabric Development</strong>
+                    <p>Numerical simulations of clinopyroxene fabric under laboratory and natural conditions; crustal delamination and finite strain</p>
+                </div>
+                <div class="research-item">
+                    <strong>Mid-Ocean Ridge Processes</strong>
+                    <p>Interactions between magmatic diking and normal faulting; along-axis variations in extension</p>
+                </div>
+            </div>
+
+            <div class="vision-box">
+                <p style="margin-bottom: 0.8rem;">
+                    Through <strong>lithospheric dynamics</strong>, <strong>deep carbon–climate feedbacks</strong>, and <strong>rheological upscaling</strong>, my research addresses a unifying question:
+                </p>
+                <p style="font-style: italic; font-size: 1.1rem; color: #2c3e50; font-weight: 500;">
+                    How does the Earth's interior regulate its surface environment through the transfer of stress, mass, and energy across scales?
+                </p>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Selected Publications</h2>
+
+            <div class="publication">
+                <div class="pub-authors">
+                    <span class="pub-highlight">Nature Communications</span>
+                    <strong>Tian, X.</strong>, Behn, M.D., Ito, G, Schierjott, J. C., Kaus, B. J., Popov, A. (2024).
+                </div>
+                <div class="pub-journal">
+                    Magmatism controls global oceanic transform fault topography. <em>Nature Communications</em>, 15, 1914.
+                </div>
+                <div class="pub-links">
+                    <a href="https://www.nature.com/articles/s41467-024-46197-9" target="_blank">→ Article</a>
+                    <a href="https://youtu.be/7r9J1q0gT-U?si=wqrwsxCe7BViNPQd" target="_blank">→ AGU23 Talk</a>
+                </div>
+                <p style="margin-top: 0.5rem; color: #666; font-size: 0.95rem;">
+                    Spreading-rate-dependent magmatism plays a central role in controlling global transform fault topography. Shows that oceanic transform faults are not simple conservative strike-slip boundaries.
+                </p>
+            </div>
+
+            <div class="publication">
+                <div class="pub-authors">
+                    <span class="pub-highlight">Nature Geoscience</span>
+                    <strong>Tian, X.</strong>, & Buck, W. R. (2022).
+                </div>
+                <div class="pub-journal">
+                    Intrusions induce global warming <strong>before</strong> continental flood basalt volcanism. <em>Nature Geoscience</em>, 15, 417–422.
+                </div>
+                <div class="pub-links">
+                    <a href="https://www.nature.com/articles/s41561-022-00939-w" target="_blank">→ Article</a>
+                    <a href="https://rdcu.be/cNtEC" target="_blank">→ Open Access</a>
+                    <a href="https://youtu.be/Hxdwxb9OxNU?si=5jYAkf68K5BO1tlq" target="_blank">→ AGU22 Invited Talk</a>
+                </div>
+                <p style="margin-top: 0.5rem; color: #666; font-size: 0.95rem;">
+                    Demonstrates that CO₂ released from magmatic intrusions causes global warming <em>before</em> the main phase of Large Igneous Province eruptions, with implications for triggers of LIP volcanism and mass extinction events.
+                </p>
+            </div>
+
+            <div class="publication">
+                <div class="pub-authors">
+                    Schierjott, J. C., Ito, G., Behn, M. D., <strong>Tian, X.</strong>, Morrow, T., Kaus, B. J., & Escartín, J. (2023).
+                </div>
+                <div class="pub-journal">
+                    How transform fault shear influences where detachment faults form near mid-ocean ridges. <em>Scientific Reports</em>, 13(1), 9259.
+                </div>
+                <div class="pub-links">
+                    <a href="https://www.nature.com/articles/s41598-023-35714-3" target="_blank">→ Article</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="pub-authors">
+                    <strong>Tian, X.</strong>, & Buck, W. R. (2019).
+                </div>
+                <div class="pub-journal">
+                    Lithospheric Thickness of Volcanic Rifting Margins: Constraints from Seaward Dipping Reflectors. <em>Journal of Geophysical Research: Solid Earth</em>, 124(4), 3254-3270.
+                </div>
+                <div class="pub-links">
+                    <a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018JB016733" target="_blank">→ Article</a>
+                    <a href="https://youtu.be/KyLgrjyQPUI?si=Ipuv3T-Iqs3mLThM" target="_blank">→ Thesis Defense</a>
+                </div>
+            </div>
+
+            <div class="publication">
+                <div class="pub-authors">
+                    <strong>Tian, X.</strong>, & Choi, E. (2017).
+                </div>
+                <div class="pub-journal">
+                    Effects of Axially Variable Diking Rates on Faulting at Slow Spreading Mid-Ocean Ridges. <em>Earth and Planetary Science Letters</em>, 458, 14-21.
+                </div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1016/j.epsl.2016.10.033" target="_blank">→ Article</a>
+                    <a href="research/Publications/Tian_Choi_2016.pdf" target="_blank">→ PDF</a>
+                </div>
+            </div>
+
+            <h3>Manuscripts in Review/Preparation</h3>
+            <ul style="list-style-position: inside; margin-left: 1rem; color: #666;">
+                <li><strong>Tian, X.</strong>, & Buck, W. R. Contrasting Topography of Continental Large Igneous Provinces: Crucial Role of Crustal Rheology and Intrusion Dynamics. <em>Under review at Earth and Planetary Science Letters</em>.</li>
+                <li><strong>Tian, X.</strong>, & Billen, M. I. Ubiquitous partitioning at global subduction zones. <em>Submitting to Science</em>.</li>
+                <li><strong>Tian, X.</strong>, Janin A., Fraters M., Behn M., et al. Numerical simulations of clinopyroxene fabric development under laboratory and natural conditions. <em>Submitting to JGR</em>.</li>
+            </ul>
+
+            <h3>Thesis</h3>
+            <div class="publication">
+                <div class="pub-authors">
+                    <strong>Tian, Xiaochuan</strong>. (2021).
+                </div>
+                <div class="pub-journal">
+                    Structural and Climatic Effects of Large-Scale Basaltic Magmatism: Constraints and Insights from Geodynamic Models. <em>PhD dissertation, Columbia University</em>.
+                </div>
+                <div class="pub-links">
+                    <a href="research/Publications/CU-Dissertation-Tian-20210228-final_version.pdf" target="_blank">→ PDF</a>
+                    <a href="https://youtu.be/bhtDVC0BKDM?si=fXTOnwReocDrRJiw" target="_blank">→ Defense Talk</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards">
+            <h2>Awards & Funding</h2>
+
+            <div class="award">
+                <div class="award-title">Lori Summa and David Awwiller Postdoctoral Research Fellowship (2024-2026)</div>
+                <div class="award-amount">$313,875</div>
+                <div class="award-desc">
+                    "Ups and Downs of Northern California Forearc" - A multidisciplinary geology/geodynamics project focusing on dynamics of forearc deformation in Northern California (PI: Xiaochuan Tian, collaborating with Michael Oskin and Magali Billen)
+                </div>
+            </div>
+
+            <div class="award">
+                <div class="award-title">Statewide California Earthquake Center Awards SCEC-25188 (2025-2026)</div>
+                <div class="award-amount">$25,056</div>
+                <div class="award-desc">
+                    "Numerical Simulations of the Change in Stress-State Inboard of the Mendocino Triple Junction" (PI: Xiaochuan Tian, Co-PIs: M. Oskin and M. Billen)
+                </div>
+            </div>
+
+            <div class="award">
+                <div class="award-title">National Science Foundation Awards OCE-1654745 (2017-2020)</div>
+                <div class="award-amount">$319,977</div>
+                <div class="award-desc">
+                    "Evaluating mechanisms for the formation, propagation and evolution of volcanic rifts and margins" (Contributed to proposal writing; PI: W. Roger Buck)
+                </div>
+            </div>
+
+            <div class="award">
+                <div class="award-title">Columbia University Dean's Fellow (2015-2020)</div>
+                <div class="award-amount">$409,515</div>
+                <div class="award-desc">
+                    The highest honor conferred upon entering graduate students in the Department of Earth and Environmental Sciences
+                </div>
+            </div>
+
+            <div class="award">
+                <div class="award-title">AGU 2024 Tectonophysics Caregiver Awards</div>
+                <div class="award-amount">$500</div>
+            </div>
+        </section>
+
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            <p>
+                Download my full CV: <a href="CV_Tian.pdf" target="_blank" style="color: #2a5298; font-weight: 600;">CV_Tian.pdf</a>
+            </p>
+
+            <h3>Academic Appointments</h3>
+            <ul style="list-style-position: inside; margin-left: 1rem;">
+                <li><strong>2024-Present:</strong> Summa and Awwiller Postdoctoral Fellow, UC Davis (with Magali Billen & Mike Oskin)</li>
+                <li><strong>2021-2024:</strong> Postdoctoral Research Fellow, Boston College (with Mark Behn & Garrett Ito)</li>
+                <li><strong>2015-2019:</strong> Graduate Research & Teaching Fellow, Columbia University</li>
+            </ul>
+
+            <h3>Field & Seagoing Experience</h3>
+            <ul style="list-style-position: inside; margin-left: 1rem;">
+                <li><strong>Peru (2019):</strong> 12-day Storke Memorial multi-disciplinary field trip</li>
+                <li><strong>Atlantic Ocean (2018):</strong> 35-day RV Atlantis cruise - Western North Atlantic Survey</li>
+                <li><strong>Azores (2017):</strong> 11-day field trip focusing on Volcanology</li>
+                <li><strong>Basin and Range (2016):</strong> 9-day field trip on normal faulting</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-label">Email:</span>
+                    <a href="mailto:equtian@ucdavis.edu">equtian@ucdavis.edu</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Institution:</span>
+                    UC Davis
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">GitHub:</span>
+                    <a href="https://github.com/magmaxt" target="_blank">magmaxt</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">Google Scholar:</span>
+                    <a href="https://scholar.google.com/citations?user=XXXX" target="_blank">Scholar Profile</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Tian, Xiaochuan (田小川). All rights reserved.
+    </footer>
+</body>
 </html>
